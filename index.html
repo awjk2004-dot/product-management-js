@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <div class="crud">
+    <div class="head">
+      <h2>curds</h2>
+      <p>system mangear</p>
+    </div>        
+  <div class="inputs">
+    <input type="text"  placeholder="title" id="title">
+    <div class="price">
+       <input onkeyup="getTotal()" type="number"  placeholder="price" id="price">
+      <input  onkeyup="getTotal()" type="number"  placeholder="txas" id="txas">
+      <input onkeyup="getTotal()" type="number"  placeholder="ads" id="ads">
+      <input onkeyup="getTotal()" type="number"  placeholder="discont" id="discont">
+      <small id="total"></small>
+    </div>
+     <input type="number"  placeholder="caont" id="caont">
+     <input type="text"  placeholder="catigore" id="catigore">
+    <button id="submit">Create</button>
+    
+  </div>
+   <div class="outputs"></div>  
+   <div class="searchBlock">
+     <input type="text" id="search" placeholder="search">
+     <div class="btnsearch">
+      <button id="searchTitle">search By Title</button>
+      <button id="searchTCatgory">search  By Catgory</button>
+     </div>
+     <div id = "deleteAll">
+      
+     </div>
+<table>
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discont</th>
+    <th>total</th>
+    <th>catigore</th>
+    <th>update</th>
+    <th>delete</th>
+  </tr>
+  <tbody id="tbody">
+  </tbody>
+</table>
+   </div>
+    
+  </div>
+   <script src="script.js" ></script>
+</body>
+</html>
